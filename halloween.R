@@ -9,7 +9,6 @@ library(here)
 font_add("Gypsy Curse", "/home/eugene/.fonts/Font2/Gypsy Curse.ttf")
 font_add("Ghastly Panic", "/home/eugene/.fonts/Font1/Ghastly Panic.ttf")
 
-
 corona <- image_read(here("images", "covid.jpg")) %>% 
   image_crop("625x900+185+50") %>% 
   image_draw()
