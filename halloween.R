@@ -5,9 +5,10 @@ library(magick)
 library(here)
 
 
-font_add(family = "Gypsy Curse", symbol = here("fonts", "Gypsy Curse.tff"))
-font_add(family = "Ghastly Panis", 
-         regular = here("fonts", "Ghastly Panic.tff"))
+
+font_add("Gypsy Curse", "/home/eugene/.fonts/Font2/Gypsy Curse.ttf")
+font_add("Ghastly Panic", "/home/eugene/.fonts/Font1/Ghastly Panic.ttf")
+
 
 corona <- image_read(here("images", "covid.jpg")) %>% 
   image_crop("625x900+185+50") %>% 
